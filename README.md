@@ -1,4 +1,4 @@
-# Custom-Discord-Theme
+# Nerdy Glow
 A theme idea I stole from the betterdiscord server to fit my needs 
 
 
