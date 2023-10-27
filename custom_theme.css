@@ -19,7 +19,7 @@
   --opacity: 0.4; /* Opacity of overall app. | Default: .85 */
   --accent: 0,255,179; /* Colour used around the app. | Values are in R,G,B format. | Default: 0, 231, 169 */
   --glow-intensity: 1; /* Intensity of the glow used around the app. | Set to 0 to disable the glow. | Decimals allowed | Default: 1 */
-  --font: Fira Code; /* Custom font | Default: 'Inter' */
+  --font: Fira Code; /* Custom font | Default: 'Fira Code' */
   --channels-width: 300px; /* Width of the channels list. | Default: 300px */
   --guilds-width: 100px; /* Width of the server list. | Default: 105px */
   --members-width: 250px; /* Width of the members list. | Default: 280px */
