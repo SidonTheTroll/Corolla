@@ -456,7 +456,13 @@ code {
  * Radial Channels  
  *
  */
-
+:root {
+  --server-unread-colour: 255, 255, 255;
+  --server-hover-colour: 255, 255, 255;
+  --server-selected-colour: var(--accent, 0, 231, 169);
+  --server-spacing: 16px;
+  --server-glow-intensity: 1;
+}
 #app-mount .listItem_fa7b36 [class*=pill] {
   left: 50%;
   top: 50%;
@@ -465,6 +471,10 @@ code {
   height: calc(var(--server-size, 48px) + 8px);
   overflow: visible;
   margin-left: -2px;
+}
+#app-mount .listItem_fa7b36 {
+  width: 100%;
+  margin-bottom: var(--server-spacing);
 }
 #app-mount .listItem_fa7b36 [class*=pill] .item_f9d377 {
   height: 100% !important;
@@ -477,14 +487,6 @@ code {
   transform: none !important;
   transition: var(--transition);
   transition-property: box-shadow;
-}
-
-:root {
-  --server-unread-colour: 255, 255, 255;
-  --server-hover-colour: 255, 255, 255;
-  --server-selected-colour: var(--accent, 0, 231, 169);
-  --server-spacing: 16px;
-  --server-glow-intensity: 1;
 }
 
 #app-mount .listItem_fa7b36 [class*=pill] span[style*="height: 0"] {
