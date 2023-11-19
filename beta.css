@@ -7,36 +7,29 @@
 @import url('https://discordstyles.github.io/SoftX/VerticalUserArea.css');
 @import url('https://raw.githubusercontent.com/DiscordStyles/RadialStatus/deploy/RadialStatus.theme.css');
 @import url("https://discordstyles.github.io/SoftX/RadialGlow.css");
-
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap");
 
-/*
- *
- * 
- *  Theme setting 
- *
- *
- */
+ /* __      __        _       _     _            */
+ /* \ \    / /       (_)     | |   | |           */
+ /*  \ \  / /_ _ _ __ _  __ _| |__ | | ___  ___  */
+ /*   \ \/ / _` | '__| |/ _` | '_ \| |/ _ \/ __| */
+ /*    \  / (_| | |  | | (_| | |_) | |  __/\__ \ */
+ /*     \/ \__,_|_|  |_|\__,_|_.__/|_|\___||___/ */
 
 :root {
-
-  /* 
-   *
-   * Theme and colors 
-   *
-   * 
-   */
-
+  /* Frame and Background */
   --app-bg: url(https://i.imgur.com/jiOW9ts.jpg);
   --app-blur: 0px;
-  --app-margin: 18px;
+  --app-margin: 30px;
   --app-radius: 10px;
+  /* Accent colors */
   --main-rgb: 0,0,0;
   --main-content-opacity: 0.2;
   --sidebar-opacity: 0.4;
   --main-content-color: rgba(var(--main-rgb), var(--main-content-opacity));
   --sidebar-color: rgba(var(--main-rgb), var(--sidebar-opacity));
-  /* Accent colors */
+  --danger-color: rgb(255, 59, 59);
   --accent-hue: 40;
   --accent-saturation: 77.5%;
   --accent-lightness: 47.1%;
@@ -50,6 +43,15 @@
   --alert-opacity: 1;
   --alert-action-color: #fff;
   --alert-text-color: #fff;
+  /* Font  */
+  --font: "Fira Code";
+  --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace;
+  --font-display: var(--font);
+  --font-primary: var(--font);
+  /* Home Icon */
+  --home-icon: url(https://github.com/SidonTheTroll/Polaris-Void/blob/main/img/icons8-arch-64.png?raw=true);
+  --home-position: center;
+  --home-size: 38px;  
   /* Message Colors */
   --message-color: rgba(0,0,0,0.4);
   --message-color-hover: rgba(0,0,0,0.55);
@@ -129,19 +131,14 @@
   --scrollbar-opacity-hover: 0.3;
   --scrollbar-width: 10px;
   --text-hyperlink: rgb(0, 70, 248);
-
-
-  /*
-   * RadialStatus veriables
-   */
-  
+  /* RadialStatus veriables */
   --rs-small-spacing: 2px; /* Spacing between profile image and outer ring on small icons (e.g. member list) | Default: 2px */
   --rs-medium-spacing: 4px; /* Spacing between profile image and outer ring on medium icons (e.g. user popout) | Default: 4px */
   --rs-large-spacing: 4px; /* Spacing between profile image and outer ring on medium icons (e.g. user popout fullscreen) | Default: 4px */
   --rs-small-width: 1.5px; /* Ring width (follows same sizing as above) | Default: 1.5px */
   --rs-medium-width: 2px; /* Default: 2px */
   --rs-large-width: 2px; /* Default: 2px */
-  /* Customizable colors */
+  /* RadialStatus Customizable colors */
   --rs-online-color: #43b581; /* Default: #43b581 */
   --rs-idle-color: #faa61a; /* Default: #faa61a */
   --rs-dnd-color: #f04747; /* Default: #f04747 */
@@ -153,21 +150,22 @@
 
 }
 
-.theme-dark,
-.theme-light {
-  --background-modifier-hover: rgba(255,255,255,0.075);
-  --background-modifier-active: rgba(255,255,255,0.1);
-  --background-modifier-selected: rgba(255,255,255,0.125);
-  --background-modifier-accent: rgba(255,255,255,0.175);
-  --text-brand: var(--text-hyperlink);
-  --text-link: var(--text-hyperlink);
-}
+
+
+ /*  ____             _    ______           _  */
+ /* |  _ \           | |  |  ____|         | | */
+ /* | |_) | __ _  ___| | _| |__   _ __   __| | */
+ /* |  _ < / _` |/ __| |/ /  __| | '_ \ / _` | */
+ /* | |_) | (_| | (__|   <| |____| | | | (_| | */
+ /* |____/ \__,_|\___|_|\_\______|_| |_|\__,_| */
+
 
 /*
  *
  *  APP ELEMENTS
  *
  */
+
 body {
   background-color: transparent;
 }
@@ -230,11 +228,72 @@ body {
   backdrop-filter: blur(var(--popout-blur));
 }
 
+
+/* 
+ *
+ *Home Icon 
+ *
+ */
+
+.homeContainer_a4aa0a .userProfileOuterThemed__6eb84 {
+    background: rgba(0, 0, 0, 0);
+}
+.homeContainer_a4aa0a .userCardInner_d6aa46,
+.homeContainer_a4aa0a .avatarBackground__9cf9d,
+.homeContainer_a4aa0a .action_c957d9,
+.homeContainer_a4aa0a .sidebarCardWrapper__2c840,
+.homeContainer_a4aa0a .row__70f4c {
+    background: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+}
+.homeContainer_a4aa0a .action_c957d9:hover {
+    background: var(--hover-color);
+}
+.homeContainer_a4aa0a .headerIcon__8b099 {
+    background: var(--main-color);
+    border: 4px solid rgba(0, 0, 0, 0);
+}
+.childWrapper__01b9c > svg {
+    width: 100%;
+    height: 100%;
+    background: var(--home-icon) var(--home-position) / var(--home-size) no-repeat;
+}
+.childWrapper__01b9c > svg > path {
+    display: none;
+}
+.childWrapper__01b9c {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease-in-out;
+}
+.wrapper_d281dd:hover .childWrapper__01b9c,
+.wrapper_d281dd.selected_f5ec8e .childWrapper__01b9c {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+/*
+ *
+ * THEME 
+ *
+ */
+
+.theme-dark,
+.theme-light {
+  --background-modifier-hover: rgba(255,255,255,0.075);
+  --background-modifier-active: rgba(255,255,255,0.1);
+  --background-modifier-selected: rgba(255,255,255,0.125);
+  --background-modifier-accent: rgba(255,255,255,0.175);
+  --text-brand: var(--text-hyperlink);
+  --text-link: var(--text-hyperlink);
+}
+
+
 /*
  *
  *  TITLE BAR
  *
  */
+
 .titleBar__01af6 {
   height: 24px;
 }
@@ -273,9 +332,126 @@ body {
 
 /*
  *
+ * FONT STUFF 
+ *
+ */
+
+body,button,input,select,textarea,
+::placeholder {
+    font-family: var(--font);
+}
+.theme-dark .container__590e2 .header__104ca {
+    height: 48px;
+    color: #fff;
+    font-family: var(--font);
+    font-weight: 600;
+    text-shadow: 0 0 3px #000;
+}
+.container__11d72 .title__9e2b0 {
+    margin-left: 0;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    font-family: var(--font);
+}
+.title__38892 {
+    font-family: var(--font);
+    font-weight: 300;
+    padding: 0 5px 0 5px;
+    border-radius: 4px;
+}
+.text__9b110 h4 {
+    height: 150px;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.5);
+    color: var(--danger-color);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 0;
+    font-weight: normal;
+    line-height: 150px;
+}
+.text__9b110 h4:after {
+    content: "YOU DIED";
+    font-size: 150px;
+}
+.text__9b110 .note__35490 {
+    font-size: 0;
+    white-space: pre-line;
+}
+.activityUserPopoutV2__32328 .timestamp__1ce6c,
+.activityProfileV2__4de28 .timestamp__1ce6c {
+    font-style: italic;
+}
+
+/*
+ *
+ * CODEBLOOCK FONT 
+ *
+ *
+ */
+
+.typeWindows__5fa63 > .wordmark__0d178:after {
+    content: "v6.3.0";
+    color: rgba(255, 255, 255, 0.3);
+    font-family: var(--code-font);
+    font-size: 10px;
+}
+.markup_a7e664 code.inline {
+    padding: 3.5px 7.5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: var(--code-font);
+    line-height: 22px;
+}
+.markup_a7e664 code.inline + pre {
+    margin-top: -1px;
+}
+.markup_a7e664 .codeActions__43b2e {
+    z-index: 999;
+}
+pre {
+    padding: 0;
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    font-family: var(--code-font);
+}
+code {
+    font-family: var(--code-font);
+}
+
+/*
+ *
+ * NOTES 
+ *
+ */ 
+
+.note__35490 > div > p {
+    margin: 0;
+}
+.note__35490 > div > p:before,
+.note__35490 > div > p:after {
+    margin-bottom: 14px;
+    display: block;
+    font-size: 16px;
+}
+.note__35490 > div > p:first-child:before {
+    content: "Looks like you got slaughtered by an Error Level 9000.";
+}
+.note__35490 > div > p:first-child:after {
+    content: "Might have been one of your plugins?";
+}
+.note__35490 > div > p:last-child:after {
+    content: "Press Ctrl + Shift + I or Cmd + Alt + I to check Console for errors.";
+}
+
+/*
+ *
  *  CHANNELS LIST
  *
  */
+
 .platform-win .sidebar_ded4b5 {
   border-radius: 0;
 }
@@ -330,6 +506,7 @@ body {
  *  PANELS
  *
  */
+
 .panels__58331 {
   background-color: transparent;
 }
@@ -395,6 +572,7 @@ body {
  *  PRIVATE CHANNELS
  *
  */
+
 .privateChannels__93473,
 .scroller__4b984 {
   background-color: transparent !important;
@@ -417,6 +595,7 @@ body {
  *  CHAT AREA
  *
  */
+
 .chat__52833,
 .noChannel__7bbff {
   background-color: var(--main-content-color) !important;
@@ -476,6 +655,7 @@ body {
  *  DIRECT MESSAGES
  *
  */
+
 .wrapper_bd2abe.minimum_ebf000, .wrapper_bd2abe.video__85ac2 {
   background-color: transparent;
   box-shadow: var(--popout-header-shadow);
@@ -525,6 +705,7 @@ body {
  *  MEMBERS LIST
  *
  */
+
 .container_b2ce9c {
   background-color: transparent;
 }
@@ -558,6 +739,7 @@ body {
  *	FORMAT TOOLBAR
  *
  */
+
 .toolbar_c7b525 {
   background-color: var(--popout-color) !important;
   border-radius: var(--popout-radius) !important;
@@ -578,6 +760,7 @@ body {
  *  SEARCH RESULTS
  *
  */
+
 .searchResultsWrap__9f374 {
   background-color: rgba(var(--main-rgb), calc((var(--sidebar-opacity) - var(--main-content-opacity)) / (1 - var(--main-content-opacity))));
 }
@@ -621,6 +804,7 @@ body {
  *	MAIN TEXTAREA
  *
  */
+
 .form__13a2c {
   margin-top: 0;
 }
@@ -710,6 +894,7 @@ body {
  *  THREAD
  *
  */
+
 .chatTarget__0ea5e {
   background-color: transparent;
   overflow: hidden;
@@ -750,6 +935,7 @@ body {
  *  BETTERDISCORD ADDONS
  *
  */
+
 .bd-search-wrapper {
   height: auto;
   border-radius: var(--input-radius);
@@ -812,6 +998,7 @@ body {
  *  BETTERDISCORD PLUGIN -> ChannelDms
  *
  */
+
 .ChannelDms-channelmembers-wrap {
   width: 240px !important;
 }
@@ -865,6 +1052,7 @@ body {
  *  BETTERDISCORD PLUGIN -> ChannelTabs
  *
  */
+
 #channelTabs-container {
   margin: calc(var(--app-margin) / 2) var(--app-margin) calc(var(--app-margin) / 4 * -1);
   padding: 4px !important;
@@ -901,6 +1089,7 @@ body {
  *  BETTERDISCORD PLUGIN -> CharCounter
  *
  */
+
 .charCounter-7fw40k {
   position: relative;
   z-index: 1;
@@ -933,6 +1122,7 @@ body {
  *  BETTERDISCORD PLUGIN -> MemberCount
  *
  */
+
 #MemberCount {
   background-color: transparent !important;
 }
@@ -946,6 +1136,7 @@ body {
  *  BETTERDISCORD PLUGIN -> SpotifyControls
  *
  */
+
 #vc-spotify-player {
   background-color: transparent !important;
 }
@@ -955,6 +1146,7 @@ body {
  *  VENCORD SETTINGS
  *
  */
+
 .vc-settings-tab-bar {
   margin-top: 24px;
   margin-bottom: 0 !important;
@@ -1025,6 +1217,7 @@ body {
  *  VENCORD PLUGIN - ReviewDB
  *
  */
+
 .userProfileOuterThemed__6eb84 .vc-rdb-view .wrapper__09ecc {
   --message-color: var(--profile-body-background-hover);
   --message-color-hover: var(--profile-body-background-hover);
@@ -1072,6 +1265,7 @@ body {
  *  FORUM
  *
  */
+
 .container_b181b6 {
   background: transparent;
 }
@@ -1190,6 +1384,7 @@ body {
  *  FORUM NEW POST
  *
  */
+
 .container__7940a.collapsed_fa2cdb {
   height: auto;
 }
@@ -1285,6 +1480,7 @@ body {
  *  FORUM POSTS
  *
  */
+
 .container_c24cbd, .container__99b06 {
   background-color: var(--card-color);
   border-radius: var(--card-radius);
@@ -1341,6 +1537,7 @@ body {
  *  BUTTONS
  *
  */
+
 .button_afdfd9 {
   border-radius: var(--button-radius) !important;
 }
@@ -1490,6 +1687,7 @@ body {
  *  CARDS
  *
  */
+
 .card-16VQ8C,
 .cardPrimary_cb7a0e,
 .backgroundAccent-2YeFtZ {
@@ -1556,6 +1754,7 @@ body {
  *  CHECKBOXES
  *
  */
+
 .checkbox_c7f690 {
   border-color: hsla(var(--accent-hsl), var(--accent-opacity));
 }
@@ -1572,6 +1771,7 @@ body {
  *  INPUTS
  *
  */
+
 .input_d266e7,
 .copyInput_c1c679,
 .copyInput-3QjTFp {
@@ -1637,6 +1837,7 @@ body {
  *  NOTICES
  *
  */
+
 .notice__5fd4c {
   box-shadow: none;
 }
@@ -1669,6 +1870,7 @@ body {
  *  RADIO BUTTONS
  *
  */
+
 .item_b7fb7e {
   background-color: var(--card-color) !important;
   border-radius: var(--card-radius) !important;
@@ -1703,6 +1905,7 @@ body {
  *	SCROLLBARS
  *
  */
+
 ::-webkit-scrollbar {
   width: var(--scrollbar-width) !important;
   height: var(--scrollbar-width) !important;
@@ -1736,6 +1939,7 @@ body {
  *  SELECT MENUS
  *
  */
+
 .select__0eb48 {
   padding: 6px 6px 6px 12px;
 }
@@ -1780,6 +1984,7 @@ body {
  *  SLIDERS
  *
  */
+
 .bar_e58961 {
   background-color: var(--background-modifier-selected) !important;
 }
@@ -1798,6 +2003,7 @@ body {
  *  SWITCHES
  *
  */
+
 .container__871ba {
   background-color: var(--switch-slider-color) !important;
 }
@@ -1843,6 +2049,7 @@ body {
  *  TAB BAR
  *
  */
+
 .tabBar__73938 .item__48dda, .tabBar__22a9a .item__48dda, .tabBar_a013ee .item__48dda, .topPill__0cdf1 .item__48dda {
   min-width: 40px;
   margin: 8px;
@@ -1871,6 +2078,7 @@ body {
  *  TOASTS
  *
  */
+
 .toast,
 .bd-toast {
   top: -56px;
@@ -1907,6 +2115,7 @@ body {
  *  TOOLTIP
  *
  */
+
 .tooltip__01384 {
   background-color: var(--tooltip-color) !important;
   border-radius: var(--tooltip-radius);
@@ -1962,6 +2171,7 @@ body {
  *  HEADER BAR
  *
  */
+
 .container__11d72 {
   box-shadow: var(--popout-header-shadow);
 }
@@ -1998,6 +2208,7 @@ body {
  *  HEADER SEARCH BAR
  *
  */
+
 .searchBar_e0c60b {
   padding: 0 4px;
   background-color: rgba(var(--textarea-color), var(--textarea-alpha));
@@ -2043,6 +2254,7 @@ body {
  *  ACTIVITY LIST
  *
  */
+
 .nowPlayingColumn_f5023f {
   background-color: transparent;
 }
@@ -2082,6 +2294,7 @@ body {
  *  ADD FRIEND
  *
  */
+
 .addFriendInputWrapper__4bf8e {
   padding: 0;
   background-color: transparent;
@@ -2109,6 +2322,7 @@ body {
  *  FRIENDS LIST
  *
  */
+
 .container__5c7e7 {
   background-color: var(--main-content-color) !important;
 }
@@ -2141,6 +2355,7 @@ body {
  *  LIBRARY
  *
  */
+
 .container_c64a9f {
   background-color: var(--main-content-color);
 }
@@ -2164,6 +2379,7 @@ body {
  *  MESSAGE REQUESTS
  *
  */
+
 .list__325e7 .sectionTitle__3a086 {
   color: var(--header-secondary);
 }
@@ -2195,6 +2411,7 @@ body {
  *  NITRO
  *
  */
+
 .applicationStore_fc7d76 {
   background-color: var(--main-content-color);
 }
@@ -2224,6 +2441,7 @@ body {
  *  MESSAGES ACTIONS
  *
  */
+
 .wrapper_c727b6 {
   background-color: var(--popout-color) !important;
   border-radius: var(--popout-radius) !important;
@@ -2246,6 +2464,7 @@ body {
  *  ATTACHMENTS
  *
  */
+
 .attachment_f3cf2c,
 .embedFull__8dc21,
 .embedCard__66fca,
@@ -2345,6 +2564,7 @@ body {
  *	MARKUP
  *
  */
+
 .markup_a7e664 a {
   color: hsl(var(--accent-hsl));
 }
@@ -2374,6 +2594,7 @@ body {
  *  MESSAGES
  *
  */
+
 .backgroundFlash_e5b9ad:not([style$="0);"]) {
   background-color: hsla(var(--accent-hsl), 0.3) !important;
   transition: 200ms ease-out background-color;
@@ -2533,6 +2754,7 @@ body {
  *  MESSAGE REACTIONS
  *
  */
+
 .reaction_b90ab0, .reaction_fef95b {
   background-color: var(--message-color);
   border-radius: var(--message-radius);
@@ -2566,6 +2788,7 @@ body {
  *  ADD SERVER MODAL
  *
  */
+
 .container__0d1a7 {
   --header-primary: #ddd;
   --header-secondary: #aaa;
@@ -2612,6 +2835,7 @@ body {
  *  CHANGE AVATAR
  *
  */
+
 .optionBox__0338f {
   background-color: var(--card-color);
   border-radius: var(--card-radius);
@@ -2634,6 +2858,7 @@ body {
  *  EVENTS
  *
  */
+
 .container-3EBHNg {
   border: none;
   box-shadow: var(--popout-header-shadow);
@@ -2683,6 +2908,7 @@ body {
  *  MODALS
  *
  */
+
 .root_a28985 {
   background-color: var(--popout-color) !important;
   border-radius: var(--popout-radius) !important;
@@ -2751,6 +2977,7 @@ body {
  *  QUICKSWITCHER
  *
  */
+
 .quickswitcher_a3d29a {
   background-color: var(--popout-color);
   border-radius: var(--popout-radius);
@@ -2786,6 +3013,7 @@ body {
  *  REACTIONS
  *
  */
+
 .scroller__5fda0 {
   background-color: var(--sidebar-color) !important;
 }
@@ -2803,6 +3031,7 @@ body {
  *  SCREENSHARE SETTINGS
  *
  */
+
 .tile-3POX2m:hover .sourceThumbnail-ERDcZE {
   box-shadow: inset 0 0 0 2px hsla(var(--accent-hsl), var(--accent-opacity));
 }
@@ -2837,6 +3066,7 @@ body {
  *  SERVER QUESTIONS
  *
  */
+
 .gradient__582ae {
   background: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.85) 100%);
 }
@@ -2876,6 +3106,7 @@ body {
  *  UPLOAD MODAL
  *
  */
+
 .uploadModal_eae2a0 {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.75) !important;
@@ -2915,6 +3146,7 @@ body {
  *  USER PROFILE
  *
  */
+
 .userProfileModalInner__7c87d.userProfileInnerThemedNonPremium__3d0a6 {
   background: none;
 }
@@ -2958,6 +3190,7 @@ body {
  *  BROWSE CHANNELS
  *
  */
+
 .container__6a848 {
   background-color: var(--card-color);
   border-radius: var(--card-radius);
@@ -2987,6 +3220,7 @@ body {
  *  CHANNELS AND ROLES
  *
  */
+
 .container__10dc7 {
   background-color: transparent !important;
 }
@@ -2999,6 +3233,7 @@ body {
  *  HOME TAB
  *
  */
+
 .container__92dc8 {
   background-color: var(--card-color);
   border-radius: var(--card-radius);
@@ -3036,6 +3271,7 @@ body {
  *  RECENT MEMBERS
  *
  */
+
 .container_df3aa0 {
   background-color: transparent !important;
 }
@@ -3078,6 +3314,7 @@ body {
  *  PREMIUM MEMBERSHIP
  *
  */
+
 .scrollerContent__6bc17 {
   max-width: 100%;
 }
@@ -3110,6 +3347,7 @@ body {
  *  SERVER DISCOVERY
  *
  */
+
 .pageWrapper_fef757 {
   background-color: var(--main-content-color) !important;
 }
@@ -3132,6 +3370,7 @@ body {
  *  ADD GAME POPOUT
  *
  */
+
 .addGamePopout_e4ca8f {
   background-color: transparent !important;
   border-radius: var(--popout-radius) !important;
@@ -3158,6 +3397,7 @@ body {
  *  AUTOCOMPLETE
  *
  */
+
 .autocomplete_df266d {
   background-color: var(--popout-color) !important;
   border-radius: var(--popout-radius) !important;
@@ -3220,6 +3460,7 @@ body {
  *  CONTEXT MENU
  *
  */
+
 .menu_dc52c6 {
   background-color: transparent;
   border-radius: var(--popout-radius);
@@ -3262,6 +3503,7 @@ body {
  *  EMOJI PICKER
  *
  */
+
 .contentWrapper__321ed, .contentWrapper_eab878,
 .emojiPicker_b65ce9 {
   background-color: transparent;
@@ -3396,6 +3638,7 @@ body {
  *  LISTENING ALONG POPOUT
  *
  */
+
 .container__56cd1 {
   background-color: var(--popout-color);
   border-radius: var(--popout-radius);
@@ -3414,6 +3657,7 @@ body {
  *  INCOMING CALL
  *
  */
+
 .root__46d4f {
   background-color: var(--popout-color) !important;
   border-radius: var(--popout-radius) !important;
@@ -3426,6 +3670,7 @@ body {
  *  INVITE POPOUT
  *
  */
+
 .inviteBannerUpsell-1t_LYM {
   background-color: var(--card-color);
   border-radius: var(--card-radius);
@@ -3437,6 +3682,7 @@ body {
  *  LIST POPOUTS
  *
  */
+
 .container_d27846 {
   border: none;
   background-color: transparent;
@@ -3501,6 +3747,7 @@ body {
  *  MESSAGES POPOUT
  *
  */
+
 .messagesPopoutWrap_b3b384 {
   max-height: 80vh !important;
   background-color: transparent;
@@ -3656,6 +3903,7 @@ body {
  *  NOISE SUPPRESSION
  *
  */
+
 .noiseCancellationPopout__06ec4 {
   background-color: transparent;
   border-radius: var(--popout-radius);
@@ -3687,6 +3935,7 @@ body {
  *  REGION SELECT POPOUT
  *
  */
+
 .regionSelectPopout__0127b {
   padding: 6px;
   background-color: var(--popout-color) !important;
@@ -3709,6 +3958,7 @@ body {
  *  ROLE PREVIEW POPOUT
  *
  */
+
 .container-3ssFyj {
   background-color: transparent;
   border-radius: var(--popout-radius);
@@ -3738,6 +3988,7 @@ body {
  *	SEARCH POPOUT
  *
  */
+
 .container_d6dad3 {
   background-color: var(--popout-color) !important;
   border-radius: var(--popout-radius) !important;
@@ -3790,6 +4041,7 @@ body {
  *  SOUNDBOARD PICKER
  *
  */
+
 .picker__6dca7 {
   background-color: transparent;
   border-radius: var(--popout-radius);
@@ -3838,6 +4090,7 @@ body {
  *  SPECTATOR MENU
  *
  */
+
 .scroller_abc422 {
   background-color: var(--popout-color) !important;
   border-radius: var(--popout-radius) !important;
@@ -3856,6 +4109,7 @@ body {
  *	STATUS PICKER
  *
  */
+
 .menu__5cf7f:before {
   display: none;
 }
@@ -3865,6 +4119,7 @@ body {
  *  STICKERS POPOUT
  *
  */
+
 .containerBackground__1e084 {
   border: none;
   background-color: var(--popout-color);
@@ -3881,6 +4136,7 @@ body {
  *  STREAM PREVIEW POPOUT
  *
  */
+
 .streamPreview__1846c {
   background-color: transparent !important;
   border-radius: var(--popout-radius) !important;
@@ -3912,6 +4168,7 @@ body {
  *  THREADS POPOUT
  *
  */
+
 .container__8261a {
   background-color: var(--popout-color);
   border-radius: var(--popout-radius);
@@ -3965,6 +4222,7 @@ body {
  *  USER POPOUT
  *
  */
+
 .profileColors__2e2f0 {
   --profile-gradient-primary-color: var(--popout-color);
   --profile-gradient-secondary-color: var(--popout-color);
@@ -4076,6 +4334,7 @@ body {
  *  VOICE CONNECTED
  *
  */
+
 .container__0810b {
   background-color: transparent;
   border-radius: var(--popout-radius);
@@ -4102,6 +4361,7 @@ body {
  *  SERVER FOLDERS
  *
  */
+
 .expandedFolderBackground__1bec6 {
   background-color: var(--server-folder-color);
   border-radius: 16px 16px 24px 24px;
@@ -4127,6 +4387,7 @@ body {
  *  SERVERS LIST
  *
  */
+
 .wrapper_a7e7a8 {
   background-color: var(--sidebar-color);
 }
@@ -4174,6 +4435,7 @@ body {
  *  SETTINGS CONTENT AREA
  *
  */
+
 .contentRegion__0bec1 {
   background-color: var(--main-content-color);
 }
@@ -4190,6 +4452,7 @@ body {
  *  SETTINGS SIDEBAR
  *
  */
+
 .sidebarRegionScroller__1fa7e {
   background-color: var(--sidebar-color);
 }
@@ -4207,6 +4470,7 @@ body {
  *	SERVER SETTING AUDIT LOG
  *
  */
+
 .auditLog__6c805 {
   background-color: var(--card-color);
   border-radius: var(--card-radius);
@@ -4229,6 +4493,7 @@ body {
  *  SERVER SETTINGS AUTOMOD
  *
  */
+
 .editCard_dfa091 {
   background-color: var(--card-color);
   border-radius: var(--card-radius);
@@ -4304,6 +4569,7 @@ body {
  *  SERVER SETTINGS BANNED USERS
  *
  */
+
 .scrollerContainer_c3503a {
   background-color: var(--card-color);
   border-radius: var(--card-radius);
@@ -4316,6 +4582,7 @@ body {
  *  SERVER SETTINGS CONTENT MODERATION
  *
  */
+
 .triggerMainContainer_c5139b {
   margin: 8px 0;
   padding: 0;
@@ -4384,6 +4651,7 @@ body {
  *  SERVER SETTINGS DISCOVERY
  *
  */
+
 .checklist__88646, .checklistContainer-12xGp5 {
   background-color: var(--card-color);
   border-radius: var(--card-radius);
@@ -4401,6 +4669,7 @@ body {
  *  SERVER SETTINGS EMOJI
  *
  */
+
 .emojiRow__4661c:before {
   background-color: var(--background-modifier-hover);
 }
@@ -4418,6 +4687,7 @@ body {
  *  SERVER SETTINGS SERVER INSIGHTS
  *
  */
+
 .memberInsightsContainer_a79381 {
   padding: 0;
   background-color: var(--card-color);
@@ -4456,6 +4726,7 @@ body {
  *  SERVER SETTINGS MEMBERSHIP SCREENING
  *
  */
+
 .enableContainer-1J91Aq {
   background-color: var(--card-color);
   border-radius: var(--card-radius);
@@ -4530,6 +4801,7 @@ body {
  *  SERVER SETTINGS SAFETY SETUP
  *
  */
+
 .changelog__6d46d {
   background-color: var(--card-color);
   border-radius: var(--card-radius);
@@ -4547,6 +4819,7 @@ body {
  *  SERVER SETTINGS PARTNER PROGRAM
  *
  */
+
 .feature-2IUcBI, .featureCard__0a441 {
   background-color: var(--card-color);
   border-radius: var(--card-radius);
@@ -4573,6 +4846,7 @@ body {
  *  SERVER SETTINGS PERMISSIONS
  *
  */
+
 .settingCard-xZSDjS {
   background-color: var(--card-color);
   border-radius: var(--card-radius);
@@ -4629,6 +4903,7 @@ body {
  *  SERVER SETTINGS ROLES
  *
  */
+
 .container_d5f6d0 {
   background-color: var(--card-color);
   border-radius: var(--card-radius);
@@ -4716,6 +4991,7 @@ body {
  *  SERVER LISTS
  *
  */
+
 .container__7712a {
   height: auto;
 }
@@ -4739,6 +5015,7 @@ body {
  *	SERVER SETTINGS STICKERS
  *
  */
+
 .tier_d16770 {
   background-color: var(--card-color);
   border-radius: var(--card-radius);
@@ -4789,6 +5066,7 @@ body {
  *  SERVER SETTINGS SERVER TEMPLATE
  *
  */
+
 .descriptionBox_cca0c3 {
   background-color: var(--card-color);
   border-radius: var(--card-radius);
@@ -4834,6 +5112,7 @@ body {
  *  USER SETTINGS ACTIVITY STATUS
  *
  */
+
 .notDetected__2a0c9 {
   background-color: var(--card-color) !important;
   border-radius: var(--card-radius) !important;
@@ -4866,6 +5145,7 @@ body {
  *  USER SETTINGS AUTHORIZED APPS
  *
  */
+
 .authedApp__51b26 {
   margin-bottom: 16px;
   padding: 0;
@@ -4890,6 +5170,7 @@ body {
  *  USER SETTINGS BILLING
  *
  */
+
 .paymentPane__9cf01 {
   background-color: var(--card-color) !important;
   border-radius: var(--card-radius) !important;
@@ -4986,6 +5267,7 @@ body {
  *  USER SETTINGS DEVICES
  *
  */
+
 .session_f56359 {
   padding: 16px;
   background-color: var(--card-color);
@@ -5007,6 +5289,7 @@ body {
  *  USER SETTINGS GAME OVERLAY
  *
  */
+
 .wrapper__4beb8 {
   border-radius: var(--card-radius);
   border-color: hsla(var(--accent-hsl), var(--accent-opacity));
@@ -5024,6 +5307,7 @@ body {
  *  USER SETTINGS KEYBINDS
  *
  */
+
 .warning__9db16 {
   border-radius: var(--card-radius);
 }
@@ -5045,6 +5329,7 @@ body {
  *  USER SETTINGS FAMILY CENTER
  *
  */
+
 .container__6968f {
   background-color: var(--card-color);
   border-radius: var(--card-radius);
@@ -5086,6 +5371,7 @@ body {
  *  USER SETTINGS MY ACCOUNT
  *
  */
+
 .accountProfileCard__22589 {
   background-color: var(--card-color);
   border-radius: var(--card-radius);
@@ -5132,6 +5418,7 @@ body {
  *  USER SETTINGS PARTY MODE
  *
  */
+
 .achievementContainer__88989 {
   background-color: var(--card-color);
   border-radius: var(--card-radius);
@@ -5216,6 +5503,7 @@ body {
  *  USER SETTINGS PROFILE
  *
  */
+
 .upsellOverlayContainer__08979 {
   border-radius: var(--card-radius);
   overflow: hidden;
@@ -5257,6 +5545,7 @@ body {
  *  USER SETTINGS SERVER BOOST
  *
  */
+
 .gradient_e94761 {
   margin-bottom: 40px;
   border-radius: var(--card-radius);
