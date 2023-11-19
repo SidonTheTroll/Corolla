@@ -129,6 +129,13 @@
   --scrollbar-opacity-hover: 0.3;
   --scrollbar-width: 10px;
   --text-hyperlink: rgb(0, 70, 248);
+  /* Glow  */
+  --chat-glow-intensity: var(--glow-intensity);
+  --channel-glow-intensity: var(--glow-intensity);
+  --members-glow-intensity: var(--glow-intensity);
+  --input-glow-intensity: var(--glow-intensity);
+  --server-glow-intensity: var(--glow-intensity);
+
   /* RadialStatus veriables */
   --rs-small-spacing: 2px; /* Spacing between profile image and outer ring on small icons (e.g. member list) | Default: 2px */
   --rs-medium-spacing: 4px; /* Spacing between profile image and outer ring on medium icons (e.g. user popout) | Default: 4px */
@@ -153,6 +160,7 @@
   
   border: 1px solid var(--border);
   border-radius: 6px;
+  --glow-intensity: 1; /* Intensity of the glow used around the app. | Set to 0 to disable the glow. | Decimals allowed | Default: 1 */
 }
 
 
@@ -425,6 +433,56 @@ pre {
 code {
     font-family: var(--code-font);
 }
+
+/* Chat username glow */
+body .cozy_f5c119 .username_d30d99,
+#app-mount .cozy_f5c119 .username_d30d99 {
+  text-shadow: 0 0 calc(var(--chat-glow-intensity) * 10px) currentColor;
+  line-height: normal;
+}
+
+/* Home page smooth-glow-bleed */
+#app-mount .peopleList__2379e {
+  margin: 0;
+}
+#app-mount .peopleListItem_d14722 {
+  margin: 0;
+  padding: 0 0 0 16px;
+  border-color: var(--border);
+  border-radius: 0;
+}
+#app-mount .peopleListItem_d14722:last-child {
+  border-bottom: 1px solid var(--border);
+}
+#app-mount .peopleListItem_d14722:hover {
+  background: var(--background-modifier-hover);
+}
+#app-mount .userInfo__18240 {
+  overflow: visible;
+}
+#app-mount .actions__93d0e {
+  height: 100%;
+}
+
+/* Transparent home action button */
+#app-mount .actionButton__23182 {
+  height: 100%;
+  width: 42px;
+  border-radius: 0;
+  margin: 0;
+  background: transparent;
+}
+
+/* Bigger activities tab */
+#app-mount .scroller__00e7e {
+  padding: 0 !important;
+  border: none;
+  margin: 0;
+}
+
+
+
+
 
 /*
  *
