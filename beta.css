@@ -5,26 +5,39 @@
 */
 
 @import url('https://discordstyles.github.io/SoftX/VerticalUserArea.css');
+@import url('https://raw.githubusercontent.com/DiscordStyles/RadialStatus/deploy/RadialStatus.theme.css');
+@import url("https://discordstyles.github.io/SoftX/RadialGlow.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap");
+
+/*
+ *
+ * 
+ *  Theme setting 
+ *
+ *
+ */
 
 :root {
-  /* HOME BUTTON ICON */
-  --home-icon: url(https://github.com/SidonTheTroll/Polaris-Void/blob/main/img/icons8-arch-linux-composed-of-nonfree-and-open-source-software-48.png?raw=true); 
-  --home-position: center; 
-  --home-size: 36px; 
 
-
+  /* 
+   *
+   * Theme and colors 
+   *
+   * 
+   */
 
   --app-bg: url(https://i.imgur.com/jiOW9ts.jpg);
   --app-blur: 0px;
-  --app-margin: 24px;
+  --app-margin: 18px;
   --app-radius: 10px;
   --main-rgb: 0,0,0;
   --main-content-opacity: 0.2;
   --sidebar-opacity: 0.4;
   --main-content-color: rgba(var(--main-rgb), var(--main-content-opacity));
   --sidebar-color: rgba(var(--main-rgb), var(--sidebar-opacity));
-  --font: Fira Code;
-  --accent-hue: 156;
+  /* Accent colors */
+  --accent-hue: 40;
   --accent-saturation: 77.5%;
   --accent-lightness: 47.1%;
   --accent-hsl: var(--accent-hue),calc(var(--accent-saturation) * var(--saturation-factor)),var(--accent-lightness);
@@ -37,16 +50,19 @@
   --alert-opacity: 1;
   --alert-action-color: #fff;
   --alert-text-color: #fff;
+  /* Message Colors */
   --message-color: rgba(0,0,0,0.4);
   --message-color-hover: rgba(0,0,0,0.55);
   --message-radius: var(--app-radius);
   --message-padding-top: 8px;
   --message-padding-side: 8px;
+  /* Mention Colors */
   --mention-hue: var(--accent-hue);
   --mention-saturation: var(--accent-saturation);
   --mention-lightness: var(--accent-lightness);
   --mention-hsl: var(--mention-hue),calc(var(--mention-saturation) * var(--saturation-factor)),var(--mention-lightness);
   --mention-opacity: 1;
+  /* Reply Colors  */
   --reply-hue: 226;
   --reply-saturation: 77.4%;
   --reply-lightness: 61.8%;
@@ -54,6 +70,7 @@
   --reply-opacity: 1;
   --notification-color: #fff;
   --list-item-radius: var(--app-radius);
+  /* Text Area Stuff  */
   --textarea-color: 255,255,255;
   --textarea-alpha: 0.1;
   --textarea-alpha-focus: 0.15;
@@ -75,6 +92,7 @@
   --button-action-color: #000;
   --button-text-color: var(--accent-text-color);
   --button-radius: 16px;
+  /* Switches, Hovers, Popouts */
   --switch-slider-color: hsla(218,4.6%,46.9%,0.85);
   --switch-knob-color: hsl(0,0%,13%);
   --popout-color: rgba(0,0,0,0.55);
@@ -110,6 +128,29 @@
   --scrollbar-opacity: 0.2;
   --scrollbar-opacity-hover: 0.3;
   --scrollbar-width: 10px;
+  --text-hyperlink: rgb(0, 70, 248);
+
+
+  /*
+   * RadialStatus veriables
+   */
+  
+  --rs-small-spacing: 2px; /* Spacing between profile image and outer ring on small icons (e.g. member list) | Default: 2px */
+  --rs-medium-spacing: 4px; /* Spacing between profile image and outer ring on medium icons (e.g. user popout) | Default: 4px */
+  --rs-large-spacing: 4px; /* Spacing between profile image and outer ring on medium icons (e.g. user popout fullscreen) | Default: 4px */
+  --rs-small-width: 1.5px; /* Ring width (follows same sizing as above) | Default: 1.5px */
+  --rs-medium-width: 2px; /* Default: 2px */
+  --rs-large-width: 2px; /* Default: 2px */
+  /* Customizable colors */
+  --rs-online-color: #43b581; /* Default: #43b581 */
+  --rs-idle-color: #faa61a; /* Default: #faa61a */
+  --rs-dnd-color: #f04747; /* Default: #f04747 */
+  --rs-offline-color: #636b75; /* Default: #636b75 */
+  --rs-streaming-color: #643da7; /* Default: #643da7 */
+  --rs-invisible-color: #747f8d; /* Default: #747f8d */
+  --rs-phone-color: var(--rs-online-color); /* Color of the phone for mobile users | Default: var(--rs-online-color) */
+  --rs-phone-visible: block; /* Visibility of the phone for mobile users | Default: block */
+
 }
 
 .theme-dark,
@@ -118,8 +159,8 @@
   --background-modifier-active: rgba(255,255,255,0.1);
   --background-modifier-selected: rgba(255,255,255,0.125);
   --background-modifier-accent: rgba(255,255,255,0.175);
-  --text-brand: hsl(var(--accent-hsl));
-  --text-link: hsl(var(--accent-hsl));
+  --text-brand: var(--text-hyperlink);
+  --text-link: var(--text-hyperlink);
 }
 
 /*
@@ -130,7 +171,6 @@
 body {
   background-color: transparent;
 }
-
 .appMount_fae9dd {
   background: var(--app-bg) !important;
   background-repeat: no-repeat !important;
@@ -173,7 +213,7 @@ body {
 .colorLink__7444e,
 .colorBrand-21Le_q,
 .colorBrand_be5f58 {
-  color: hsl(var(--accent-hsl));
+  color: hsl(var(--text-hyperlink));
 }
 
 .container__4bde3 {
