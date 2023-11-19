@@ -1509,7 +1509,6 @@ code {
   background-color: var(--card-color);
   border-radius: var(--card-radius);
   border: none;
-  border: none;
 }
 .header_c01fde.headerWithMatchingPosts_da85d4 {
   border-bottom-left-radius: 0;
@@ -1798,7 +1797,6 @@ code {
   --button-text-color: var(--accent-text-color);
   --button-outline: none;
   background-color: var(--button-background) !important;
-  border: var(--button-outline) !important;
   color: var(--button-text-color) !important;
   border: var(--button-outline) !important;
 }
@@ -2323,7 +2321,6 @@ code {
   border-radius: var(--popout-radius);
   box-shadow: var(--popout-shadow);
   backdrop-filter: blur(var(--popout-blur));
-  border-radius: 16px;
   color: var(--text-normal);
 }
 .toast:not(.toast-custom),
@@ -3821,7 +3818,6 @@ code {
   border-radius: var(--popout-radius);
   box-shadow: var(--popout-shadow);
   backdrop-filter: blur(var(--popout-blur));
-  border-radius: 0;
 }
 
 .emojiPickerHasTabWrapper__80686 .wrapper_cd625e {
@@ -4067,7 +4063,6 @@ code {
 .channelHeader__5d30c {
   margin: 4px 0;
   padding: 12px 16px 12px 28px;
-  background-color: transparent;
   background-color: var(--popout-color);
   border-radius: var(--popout-radius);
   box-shadow: var(--popout-shadow);
@@ -4482,7 +4477,6 @@ code {
   border-radius: var(--popout-radius);
   box-shadow: none;
   overflow: hidden;
-  border-radius: var(--popout-radius);
 }
 .userProfileOuter__46bb7:before {
   position: absolute;
