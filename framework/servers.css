@@ -75,5 +75,10 @@
 .item_f9d377 {
   background-color: var(--notification-color);
 }
-
+/* Explore servers radial-glow */
+#app-mount .wrapper__3670f {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
 
