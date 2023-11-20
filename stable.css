@@ -181,3 +181,24 @@
 /* | |_) | (_| | (__|   <| |____| | | | (_| | */
 /* |____/ \__,_|\___|_|\_\______|_| |_|\__,_| */
 
+/* For BetterDiscord */
+@import url("https://raw.githubusercontent.com/SidonTheTroll/Corolla/main/framework/client/betterdiscord.css");
+/* For Vencord */
+@import url("https://raw.githubusercontent.com/SidonTheTroll/Corolla/main/framework/client/vencord.css");
+
+/* Important components */
+@import url("https://raw.githubusercontent.com/SidonTheTroll/Corolla/main/framework/body.css");
+@import url("https://raw.githubusercontent.com/SidonTheTroll/Corolla/main/framework/buttons.css");
+@import url("https://raw.githubusercontent.com/SidonTheTroll/Corolla/main/framework/cards.css");
+@import url("https://raw.githubusercontent.com/sidonthetroll/Corolla/main/framework/channels.css");
+@import url("https://raw.githubusercontent.com/SidonTheTroll/Corolla/main/framework/chat.css");
+@import url("https://raw.githubusercontent.com/SidonTheTroll/Corolla/main/framework/fonts.css");
+@import url("https://raw.githubusercontent.com/SidonTheTroll/Corolla/main/framework/forums.css");
+@import url("https://raw.githubusercontent.com/SidonTheTroll/Corolla/main/framework/notes.css");
+@import url("https://raw.githubusercontent.com/SidonTheTroll/Corolla/main/framework/notices.css");
+@import url("https://raw.githubusercontent.com/SidonTheTroll/Corolla/main/framework/panels.css");
+@import url("https://raw.githubusercontent.com/SidonTheTroll/Corolla/main/framework/radial-channels.css");
+@import url("https://raw.githubusercontent.com/SidonTheTroll/Corolla/main/framework/servers.css");
+@import url("https://raw.githubusercontent.com/SidonTheTroll/Corolla/main/framework/settings-ui.css");
+@import url("https://raw.githubusercontent.com/SidonTheTroll/Corolla/main/framework/threads.css");
+@import url("https://raw.githubusercontent.com/SidonTheTroll/Corolla/main/framework/ui.css"); 
