@@ -1,7 +1,19 @@
-# Polaris Void
+<h1 align=center>Corolla</h1> 
 
-## ⚠️ CODE CLRRENTLY NOT WORKING DUE TO UPDATE
+<div align='center'>
+ 
+![Reposize](https://img.shields.io/github/repo-size/SidonTheTroll/Corolla?label=Repo%20Size&style=flat&logo=markdown&logoColor=FFFFFF&labelColor=%23c53f00&color=%23e8d3ad)
+![License](https://img.shields.io/badge/GNUgpl3-License?style=flat&logo=gnu&logoColor=white&label=License&labelColor=a71e5b&color=%23e1baad)
 
-A theme idea I stole from the betterdiscord server to fit my needs 
+</div>
 
-~~Or fork this repo and give me better ideas and fix shit code~~
+Highly customizable and hybrid discord theme crossing over the good components of [SoftX](https://github.com/DiscordStyles/SoftX) and [Translucence](https://github.com/CapnKitten/Translucence) for the best user experience while revamping most of the ui components.
+
+<img align=center src="./img/image_2023-11-20_180936312.png"> 
+
+Keep in mind that **FUTURE CSS UPDATES MAY BREAK THE THEME**.
+
+---
+
+Started project on 18th November 2023.  
+Thanks NeoVim team. 
