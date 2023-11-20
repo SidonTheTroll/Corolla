@@ -1,0 +1,101 @@
+/*
+ *
+ * FONT STUFF 
+ *
+ */
+
+body,
+button,
+input,
+select,
+textarea,
+::placeholder {
+  font-family: var(--font);
+}
+.theme-dark .container__590e2 .header__104ca {
+  height: 48px;
+  color: #fff;
+  font-family: var(--font);
+  font-weight: 600;
+  text-shadow: 0 0 3px #000;
+}
+.container__11d72 .title__9e2b0 {
+  margin-left: 0;
+  color: #fff;
+  text-shadow: 0 0 3px #000;
+  font-family: var(--font);
+}
+.title__38892 {
+  font-family: var(--font);
+  font-weight: 300;
+  padding: 0 5px 0 5px;
+  border-radius: 4px;
+}
+.text__9b110 h4 {
+  height: 150px;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.5);
+  color: var(--danger-color);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 0;
+  font-weight: normal;
+  line-height: 150px;
+}
+.text__9b110 h4:after {
+  content: "YOU DIED";
+  font-size: 150px;
+}
+.text__9b110 .note__35490 {
+  font-size: 0;
+  white-space: pre-line;
+}
+.activityUserPopoutV2__32328 .timestamp__1ce6c,
+.activityProfileV2__4de28 .timestamp__1ce6c {
+  font-style: italic;
+}
+
+/*
+ *
+ * CODEBLOOCK FONT 
+ *
+ *
+ */
+
+.typeWindows__5fa63 > .wordmark__0d178:after {
+  content: "v6.3.0";
+  color: rgba(255, 255, 255, 0.3);
+  font-family: var(--code-font);
+  font-size: 10px;
+}
+.markup_a7e664 code.inline {
+  padding: 3.5px 7.5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: var(--code-font);
+  line-height: 22px;
+}
+.markup_a7e664 code.inline + pre {
+  margin-top: -1px;
+}
+.markup_a7e664 .codeActions__43b2e {
+  z-index: 999;
+}
+pre {
+  padding: 0;
+  background: rgba(0, 0, 0, 0);
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  font-family: var(--code-font);
+}
+code {
+  font-family: var(--code-font);
+}
+
+/* Chat username glow */
+body .cozy_f5c119 .username_d30d99,
+#app-mount .cozy_f5c119 .username_d30d99 {
+  text-shadow: 0 0 calc(var(--chat-glow-intensity) * 10px) currentColor;
+  line-height: normal;
+}

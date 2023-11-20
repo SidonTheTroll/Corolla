@@ -1,0 +1,79 @@
+/*
+ *
+ *  SERVER FOLDERS
+ *
+ */
+
+.expandedFolderBackground__1bec6 {
+  background-color: var(--server-folder-color);
+  border-radius: 16px 16px 24px 24px;
+}
+
+.folder__17546 {
+  background-color: transparent;
+}
+.folder__17546.hover__043de {
+  background-color: var(--server-folder-color);
+}
+
+[style*="background-color: rgba(88, 101, 242, 0.4)"].folderIconWrapper__72239 {
+  background-color: hsla(var(--accent-hsl), 0.4) !important;
+}
+
+.expandedFolderIconWrapper__458cf svg[style="color: rgb(88, 101, 242);"] {
+  color: hsla(var(--accent-hsl), var(--accent-opacity)) !important;
+}
+
+/*
+ *
+ *  SERVERS LIST
+ *
+ */
+
+.wrapper_a7e7a8 {
+  background-color: var(--sidebar-color);
+}
+.wrapper_a7e7a8 .tree__7a511:focus {
+  outline: none;
+}
+
+.scroller__3d071 {
+  background-color: transparent !important;
+}
+
+.listItem_fa7b36 svg {
+  filter: none;
+}
+
+.childWrapper__01b9c,
+.circleIconButton_d8df29 {
+  background-color: hsla(var(--accent-hsl), var(--accent-opacity)) !important;
+  color: var(--accent-text-color) !important;
+}
+
+.mention__1afd3 {
+  background-color: hsla(var(--accent-hsl), var(--accent-opacity));
+  color: var(--accent-text-color);
+}
+
+/*Mention number badge */
+.numberBadge__50328 {
+  background-color: hsla(
+    var(/*--accent-hsl*/ /*Uncomment to use accent color as value*/),
+    var(--accent-opacity)
+  ) !important;
+  color: var(--accent-text-color) !important;
+}
+
+.iconBadge_fdf33a.participating__25a2a {
+  background-color: hsla(var(--accent-hsl), var(--accent-opacity));
+}
+.iconBadge_fdf33a.participating__25a2a path {
+  fill: var(--accent-text-color);
+}
+
+.item_f9d377 {
+  background-color: var(--notification-color);
+}
+
+

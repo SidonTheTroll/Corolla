@@ -1,0 +1,24 @@
+/*
+ *
+ * NOTES 
+ *
+ */
+
+.note__35490 > div > p {
+  margin: 0;
+}
+.note__35490 > div > p:before,
+.note__35490 > div > p:after {
+  margin-bottom: 14px;
+  display: block;
+  font-size: 16px;
+}
+.note__35490 > div > p:first-child:before {
+  content: "Looks like you got slaughtered by an Error Level 9000.";
+}
+.note__35490 > div > p:first-child:after {
+  content: "Might have been one of your plugins?";
+}
+.note__35490 > div > p:last-child:after {
+  content: "Press Ctrl + Shift + I or Cmd + Alt + I to check Console for errors.";
+}

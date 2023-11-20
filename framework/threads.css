@@ -1,0 +1,40 @@
+/*
+ *
+ *  THREAD
+ *
+ */
+
+.chatTarget__0ea5e {
+  background-color: transparent;
+  overflow: hidden;
+}
+.chatTarget__0ea5e:before {
+  content: " ";
+  position: absolute;
+  width: calc(100% + var(--app-margin) * 2);
+  height: calc(100% + var(--app-margin) * 2 + 24px);
+  top: calc((var(--app-margin) + 24px) * -1);
+  left: calc(var(--app-margin) * -1);
+  background-color: var(--popout-color);
+  background-image: var(--app-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: inset 0 0 0 100vmax var(--main-content-color);
+  filter: blur(var(--app-blur));
+  z-index: -1;
+  pointer-events: none;
+}
+
+.floating_f021e2 {
+  border-left-color: rgba(255, 255, 255, 0.1);
+}
+
+.container_def45c {
+  border-radius: var(--app-radius);
+}
+
+.resizeHandle_f1a098 {
+  background-color: transparent;
+}

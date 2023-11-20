@@ -1,0 +1,111 @@
+
+/*
+ *
+ *  CHANNELS LIST
+ *
+ */
+
+.platform-win .sidebar_ded4b5 {
+  border-radius: 0;
+}
+
+.sidebar_ded4b5 {
+  background-color: var(--sidebar-color);
+}
+.sidebar_ded4b5 .container__590e2 {
+  background-color: transparent;
+}
+.sidebar_ded4b5 .link__95dc0 {
+  border-radius: var(--list-item-radius);
+}
+.sidebar_ded4b5 .voiceChannelsButton__46c37:hover {
+  background-color: var(--background-modifier-hover);
+}
+
+.header__104ca {
+  background-color: transparent !important;
+  box-shadow: var(--popout-header-shadow);
+}
+.header__104ca .communityInfoPill_d3f445 {
+  background-color: var(--card-color);
+  border-radius: var(--card-radius);
+}
+
+.content_b60865 {
+  border-radius: var(--list-item-radius);
+}
+
+.container__42884 {
+  background-color: var(--card-color);
+  border-radius: var(--card-radius);
+  border: none;
+}
+
+/* Channel list padding  */
+#app-mount .containerDefault__23a29 {
+  padding-top: 18px;
+}
+
+/* Unread glow bar */ 
+#app-mount .wrapper__7bcde.modeUnread_f74c03 .unread__48cf4 {
+  box-shadow: 0 0 calc(var(--channel-glow-intensity) * 10px) calc(var(--channel-glow-intensity) * 2px) rgb(var(--unread-colour)/0.3);
+  width: 2px;
+  height: 15px;
+  margin: 0;
+  transform: translateY(-50%);
+  top: 50%;
+  border-radius: 0;
+  left: 0;
+}
+#app-mount .wrapper__7bcde.modeUnread_f74c03 .icon_eff5d4,
+#app-mount .wrapper__7bcde.modeUnread_f74c03 .name__8d1ec {
+  color: #fff;
+  filter: drop-shadow(0 0 calc(var(--channel-glow-intensity) * 5px) rgb(var(--unread-colour)/0.3)) drop-shadow(0 0 calc(var(--channel-glow-intensity) * 2px) rgb(var(--unread-colour)/0.2));
+}
+
+/* Channel styling */ 
+#app-mount .link__95dc0 {
+  padding: 10px 16px;
+  margin: 0;
+} 
+#app-mount .containerDefault__23a29 {
+  padding-top: 18px;
+}
+
+
+/* CHANNELS LIST -> ACTION BUTTONS */
+.actionButton-2ae9DJ {
+  background-color: var(--background-modifier-hover);
+  border-radius: var(--list-item-radius);
+  border: none;
+}
+.actionButton-2ae9DJ:hover {
+  background-color: var(--background-modifier-active);
+}
+.actionButton-2ae9DJ.actionButtonSelected-2a5GGr {
+  background-color: var(--background-modifier-accent);
+}
+
+/*
+ *
+ *  PRIVATE CHANNELS
+ *
+ */
+
+.privateChannels__93473,
+.scroller__4b984 {
+  background-color: transparent !important;
+}
+
+.searchBar_e4ea2a {
+  box-shadow: var(--popout-header-shadow);
+}
+.searchBar_e4ea2a .searchBarComponent__22760 {
+  background-color: rgba(var(--textarea-color), var(--textarea-alpha));
+  border-radius: 14px;
+}
+
+.channel_c21703 {
+  border-radius: var(--list-item-radius);
+}
+

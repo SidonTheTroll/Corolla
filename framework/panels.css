@@ -1,0 +1,66 @@
+/*
+ *
+ *  PANELS
+ *
+ */
+
+.panels__58331 {
+  background-color: transparent;
+}
+
+.avatarSpeaking_c95053 {
+  box-shadow: inset 0 0 0 2px hsl(var(--accent-hsl)),
+    inset 0 0 0 3px var(--background-secondary);
+}
+
+.container_cf0d66 {
+  width: calc(100% - 16px);
+  margin: 0 8px 8px;
+  background-color: transparent;
+  border-radius: var(--popout-radius);
+  box-shadow: none;
+  overflow: hidden;
+}
+.container_cf0d66:before {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--popout-color);
+  border-radius: var(--popout-radius);
+  box-shadow: var(--popout-shadow);
+  backdrop-filter: blur(var(--popout-blur));
+  pointer-events: none;
+  z-index: -1;
+}
+.container_cf0d66 .content_bbe5dc {
+  padding: 8px 0;
+}
+.container_cf0d66 .video_d48ca7 {
+  width: 208px !important;
+  height: 117px !important;
+  border-radius: var(--popout-radius);
+}
+
+.container_d667ff,
+.container_ca50b9,
+.activityPanel__22355 {
+  background: transparent !important;
+}
+
+.container_d667ff .disabledButtonWrapper__69c70 {
+  --button-padding: 0;
+  border-radius: var(--button-radius);
+}
+
+.withTagAsButton_cc125f,
+.withTagless__98b7d {
+  margin-left: -4px;
+  padding-left: 4px;
+}
+.withTagAsButton_cc125f:hover,
+.withTagless__98b7d:hover {
+  border-radius: 20px;
+}

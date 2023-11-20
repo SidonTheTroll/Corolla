@@ -1,0 +1,66 @@
+/*
+ *
+ *  CARDS
+ *
+ */
+
+.card-16VQ8C,
+.cardPrimary_cb7a0e,
+.backgroundAccent-2YeFtZ {
+  background-color: var(--card-color) !important;
+  border-radius: var(--card-radius) !important;
+  border: none !important;
+}
+
+.cardPrimary_cb7a0e {
+  border-style: solid !important;
+  border-width: 1px !important;
+  border-color: transparent !important;
+}
+.cardPrimary_cb7a0e .cardHeader__27283 {
+  background-color: unset;
+  border-bottom: 1px solid var(--card-color);
+}
+.cardPrimary_cb7a0e .group__2716e {
+  background-color: var(--card-color);
+  border-radius: var(--button-radius);
+  border: none;
+  overflow: hidden;
+}
+
+.button__71a0f {
+  background-color: var(--card-color) !important;
+}
+.button__71a0f:hover {
+  background-color: var(--card-color-hover) !important;
+}
+
+.cardWrapper_bc8d2a {
+  background-color: var(--card-color);
+  border-radius: var(--card-radius);
+  border: none;
+}
+.cardWrapper_bc8d2a:hover {
+  background-color: var(--card-color-hover);
+  border: none;
+}
+
+.card__11580:hover {
+  background-color: transparent;
+}
+
+.upsellContainer__978df {
+  background-color: var(--card-color);
+  border-radius: var(--card-radius);
+  border: none;
+}
+.upsellContainer__978df .upsellFooter__63475 {
+  background-color: transparent;
+}
+
+.dropsHelpText__71de8,
+.promotionCard__8581c {
+  background-color: var(--card-color);
+  border-radius: var(--card-radius);
+  border: none;
+}

@@ -1,0 +1,168 @@
+/*
+ *
+ *  APP ELEMENTS
+ *
+ */
+
+body {
+  background-color: transparent;
+}
+.appMount_fae9dd {
+  background: var(--app-bg) !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+.appMount_fae9dd * {
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.appMount_fae9dd svg {
+  filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.5));
+}
+
+::selection {
+  background: hsla(var(--accent-hsl), 0.65);
+  color: var(--accent-text-color);
+}
+
+.layers_a23c37 {
+  margin: calc(var(--app-margin) / 2) var(--app-margin) var(--app-margin)
+    var(--app-margin);
+  border-radius: var(--app-radius);
+  overflow: hidden;
+  z-index: 1;
+  backdrop-filter: blur(var(--app-blur));
+}
+
+.typeMacOS__496b0 + .app_b1f720 .layers_a23c37 {
+  margin: var(--app-margin);
+}
+
+.app_de4237,
+.bg__12180 {
+  background-color: transparent;
+}
+
+.anchor-1MIwyf {
+  color: hsl(var(--accent-hsl));
+}
+
+.colorLink__7444e,
+.colorBrand-21Le_q,
+.colorBrand_be5f58 {
+  color: hsl(var(--text-hyperlink));
+}
+
+.container__4bde3 {
+  background: var(--app-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.container__4bde3 .content__0e954 {
+  padding: 16px;
+  background-color: var(--popout-color);
+  border-radius: var(--popout-radius);
+  box-shadow: var(--popout-shadow);
+  backdrop-filter: blur(var(--popout-blur));
+}
+
+/* 
+ *
+ *Home Icon 
+ *
+ */
+
+.homeContainer_a4aa0a .userProfileOuterThemed__6eb84 {
+  background: rgba(0, 0, 0, 0);
+}
+.homeContainer_a4aa0a .userCardInner_d6aa46,
+.homeContainer_a4aa0a .avatarBackground__9cf9d,
+.homeContainer_a4aa0a .action_c957d9,
+.homeContainer_a4aa0a .sidebarCardWrapper__2c840,
+.homeContainer_a4aa0a .row__70f4c {
+  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+}
+.homeContainer_a4aa0a .action_c957d9:hover {
+  background: var(--hover-color);
+}
+.homeContainer_a4aa0a .headerIcon__8b099 {
+  background: var(--main-color);
+  border: 4px solid rgba(0, 0, 0, 0);
+}
+.childWrapper__01b9c > svg {
+  width: 100%;
+  height: 100%;
+  background: var(--home-icon) var(--home-position) / var(--home-size) no-repeat;
+}
+.childWrapper__01b9c > svg > path {
+  display: none;
+}
+.childWrapper__01b9c {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease-in-out;
+}
+.wrapper_d281dd:hover .childWrapper__01b9c,
+.wrapper_d281dd.selected_f5ec8e .childWrapper__01b9c {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+/*
+ *
+ * THEME 
+ *
+ */
+
+.theme-dark,
+.theme-light {
+  --background-modifier-hover: rgba(255, 255, 255, 0.075);
+  --background-modifier-active: rgba(255, 255, 255, 0.1);
+  --background-modifier-selected: rgba(255, 255, 255, 0.125);
+  --background-modifier-accent: rgba(255, 255, 255, 0.175);
+  --text-brand: var(--text-hyperlink);
+  --text-link: var(--text-hyperlink);
+}
+
+/*
+ *
+ *  TITLE BAR
+ *
+ */
+
+.titleBar__01af6 {
+  height: 24px;
+}
+.titleBar__01af6.withFrame__485f4 {
+  margin-top: 0;
+}
+.titleBar__01af6.typeMacOS__496b0 {
+  top: var(--app-margin);
+  left: var(--app-margin);
+}
+.titleBar__01af6.typeMacOS__496b0 .macButtons__7b1bc {
+  width: 72px;
+  border-top-left-radius: var(--app-radius);
+}
+.titleBar__01af6.typeMacOS__496b0 .macButtons__7b1bc .macButton__3b74b {
+  cursor: pointer;
+}
+
+.wordmarkWindows__05c46 {
+  color: #fff;
+}
+
+.winButton__88672 {
+  height: 100%;
+  top: 0;
+  color: #fff;
+}
+
+.platform-osx .wrapper_a7e7a8 {
+  margin-top: 0;
+  padding-top: 35px;
+}
+.platform-osx .tree__7a511 {
+  margin-top: 32px;
+}
