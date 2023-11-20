@@ -9,6 +9,8 @@
 
 **Highly customizable** and **hybrid** discord theme crossing over the good components of [SoftX](https://github.com/DiscordStyles/SoftX) and [Translucence](https://github.com/CapnKitten/Translucence) for the **best user experience while revamping most of the ui components**.
 
+To get going, paste `@import url ("https://raw.githubusercontent.com/SidonTheTroll/Corolla/main/stable.css");` in the Quick Css menu.
+
 <img align=center src="./img/image_2023-11-20_180936312.png"> 
 
 Keep in mind that **FUTURE CSS UPDATES MAY BREAK THE THEME**.
