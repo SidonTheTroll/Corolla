@@ -135,7 +135,9 @@
   --members-glow-intensity: var(--glow-intensity);
   --input-glow-intensity: var(--glow-intensity);
   --server-glow-intensity: var(--glow-intensity);
-
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  --glow-intensity: 1; /* Intensity of the glow used around the app. | Set to 0 to disable the glow. | Decimals allowed | Default: 1 */
   /* RadialStatus veriables */
   --rs-small-spacing: 2px; /* Spacing between profile image and outer ring on small icons (e.g. member list) | Default: 2px */
   --rs-medium-spacing: 4px; /* Spacing between profile image and outer ring on medium icons (e.g. user popout) | Default: 4px */
@@ -152,17 +154,11 @@
   --rs-invisible-color: #747f8d; /* Default: #747f8d */
   --rs-phone-color: var(--rs-online-color); /* Color of the phone for mobile users | Default: var(--rs-online-color) */
   --rs-phone-visible: block; /* Visibility of the phone for mobile users | Default: block */
-
-
+  /*User area*/
   --user-area: calc(var(--server-size) + 175px);
   --transition: 0.15s ease;
   --accent: 617, 150, 14;
-  
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  --glow-intensity: 1; /* Intensity of the glow used around the app. | Set to 0 to disable the glow. | Decimals allowed | Default: 1 */
 }
-
 
 
  /*  ____             _    ______           _  */
@@ -457,8 +453,9 @@ body .cozy_f5c119 .username_d30d99,
 #app-mount .peopleListItem_d14722:hover {
   background: var(--background-modifier-hover);
 }
+/* Fully Display user status in home page */
 #app-mount .userInfo__18240 {
-  overflow: visible;
+  overflow: invisible;
 }
 #app-mount .actions__93d0e {
   height: 100%;
@@ -4701,8 +4698,9 @@ body .cozy_f5c119 .username_d30d99,
   color: var(--accent-text-color);
 }
 
+/*Mention number badge */
 .numberBadge__50328 {
-  background-color: hsla(var(--accent-hsl), var(--accent-opacity)) !important;
+  background-color: hsla(var(/*--accent-hsl*/  /*Uncomment to use accent color as value*/), var(--accent-opacity)) !important;
   color: var(--accent-text-color) !important;
 }
 
