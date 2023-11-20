@@ -14,7 +14,7 @@
 /* |____/ \__,_|\___|_|\_\______|_| |_|\__,_| */
 
 /* For BetterDiscord */
-/* @import url("https://raw.githubusercontent.com/SidonTheTroll/Corolla/main/framework/client/betterdiscord.css"); */
+@import url("https://raw.githubusercontent.com/SidonTheTroll/Corolla/main/framework/client/betterdiscord.css"); 
 
 /* For Vencord */
 @import url("https://raw.githubusercontent.com/SidonTheTroll/Corolla/main/framework/client/vencord.css");
