@@ -146,6 +146,8 @@
   --server-glow-intensity: var(--glow-intensity);
   border: 1px solid var(--border);
   border-radius: 6px;
+  --unread-colour: 255 255 255;
+  /* Radial Status  */
   --glow-intensity: 1; /* Intensity of the glow used around the app. | Set to 0 to disable the glow. | Decimals allowed | Default: 1 */
   /* RadialStatus veriables */
   --rs-small-spacing: 2px; /* Spacing between profile image and outer ring on small icons (e.g. member list) | Default: 2px */
